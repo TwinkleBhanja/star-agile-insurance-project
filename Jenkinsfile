@@ -8,7 +8,7 @@ node{
     
     stage('prepare enviroment'){
         echo 'initialize all the variables'
-        mavenHome = tool name: 'maven' , type: 'maven'
+        mavenHome = tool name: 'maven_3.6.3' , type: 'maven'
         mavenCMD = "${mavenHome}/bin/mvn"
         docker = tool name: 'docker' , type: 'org.jenkinsci.plugins.docker.commons.tools.DockerTool'
         dockerCMD = "${docker}/bin/docker"
